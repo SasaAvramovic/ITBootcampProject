@@ -25,7 +25,7 @@ public class TestAboutUsAndLogin {
 	public void createDriver() {
 		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 3);
+		wait = new WebDriverWait(driver, 20);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -43,8 +43,8 @@ public class TestAboutUsAndLogin {
 	@Test (priority = 2)		//check login with valid credentials
 	public void testHomePage() {
 		driver.navigate().to(Constants.URL_LOGIN);
-		LoginPage.enterUsername(driver,  "lucy@the.sky");
-		LoginPage.enterPassword(driver, "PurpleHaze");
+		LoginPage.enterUsername(driver);
+		LoginPage.enterPassword(driver);
 		LoginPage.clickLoginBtn(driver, wait);
 
 		Assert.assertEquals(driver.getCurrentUrl(), Constants.URL_DASH);

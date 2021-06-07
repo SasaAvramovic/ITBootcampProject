@@ -22,15 +22,19 @@ ZADACI:
 a) pocetna strana
 
 1.	Doci do stranice ABOUT US i napraviti screenshot strane
+
 2.	Proveriti da li postojeci user uspesno moze da se loguje
 
 b) vasaFirma/humanity
 
 1.	Proveriti sve elemente iz gornjeg menija - 
 da li naziv iz menija odgovara strani na koju sajt redirektuje prilikom kliktanja na dugme
+
 2.	Dodati novog zaposlenog i proveriti uspesnost dodavanja
+
 3.	Zaposlenom promeniti ime
 3.1. Dodatni zadatak: zaposlenom dodati fotografiju
+
 4.	Koristeci apachePOI (ucitavanjem iz excel tabele), automatski dodati minimum 5 novih zaposlenih 
 i proveriti uspesnost dodavanja. Sami kreirate tabelu sa potrebnim podacima.
 

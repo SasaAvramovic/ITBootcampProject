@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-03T22:09:08Z" name="Default suite" finished-at="2021-06-03T22:09:20Z" duration-ms="11636">
+  <suite started-at="2021-06-07T21:04:21Z" name="Default suite" finished-at="2021-06-07T21:04:48Z" duration-ms="26916">
     <groups>
     </groups>
-    <test started-at="2021-06-03T22:09:08Z" name="Default test" finished-at="2021-06-03T22:09:20Z" duration-ms="11636">
-      <class name="tests.TestAboutUsAndLogin">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:tests.TestAboutUsAndLogin@313b2ea6]" started-at="2021-06-03T22:09:08Z" name="createDriver" finished-at="2021-06-03T22:09:10Z" duration-ms="1568" status="PASS">
+    <test started-at="2021-06-07T21:04:21Z" name="Default test" finished-at="2021-06-07T21:04:48Z" duration-ms="26916">
+      <class name="tests.TestAddStaffAndRename">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:21Z" name="createDriver" finished-at="2021-06-07T21:04:23Z" duration-ms="1830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="testAboutUs()[pri:1, instance:tests.TestAboutUsAndLogin@313b2ea6]" started-at="2021-06-03T22:09:10Z" name="testAboutUs" finished-at="2021-06-03T22:09:15Z" duration-ms="5314" status="PASS">
+        <test-method signature="testAddStaffAndRename()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:23Z" name="testAddStaffAndRename" finished-at="2021-06-07T21:04:43Z" duration-ms="20359" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAboutUs -->
-        <test-method signature="testHomePage()[pri:2, instance:tests.TestAboutUsAndLogin@313b2ea6]" started-at="2021-06-03T22:09:15Z" name="testHomePage" finished-at="2021-06-03T22:09:19Z" duration-ms="4056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:tests.TestAboutUsAndLogin@313b2ea6]" started-at="2021-06-03T22:09:19Z" name="closeAll" finished-at="2021-06-03T22:09:20Z" duration-ms="684" status="PASS">
+        </test-method> <!-- testAddStaffAndRename -->
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:43Z" name="closeAll" finished-at="2021-06-07T21:04:48Z" duration-ms="4707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->
-      </class> <!-- tests.TestAboutUsAndLogin -->
+      </class> <!-- tests.TestAddStaffAndRename -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -9,12 +9,12 @@ import resources.Constants;
 public class LoginPage {
 	
 	
-	public static void enterUsername(WebDriver driver, String username) {
-		driver.findElement(Constants.INPUT_USERNAME).sendKeys(username);
+	public static void enterUsername(WebDriver driver) {
+		driver.findElement(Constants.INPUT_USERNAME).sendKeys(Constants.USER);
 	}
 	
-	public static void enterPassword(WebDriver driver, String password) {
-		driver.findElement(Constants.INPUT_PASSWORD).sendKeys(password);
+	public static void enterPassword(WebDriver driver) {
+		driver.findElement(Constants.INPUT_PASSWORD).sendKeys(Constants.PASSWORD);
 	}
 	
 	public static void clickLoginBtn(WebDriver driver, WebDriverWait wait) {
@@ -26,4 +26,10 @@ public class LoginPage {
 		}
 	}
 
+	public static void login(WebDriver driver, WebDriverWait wait) {
+		driver.findElement(Constants.INPUT_USERNAME).sendKeys(Constants.USER);
+		driver.findElement(Constants.INPUT_PASSWORD).sendKeys(Constants.PASSWORD);
+		driver.findElement(Constants.CLICK_LOGIN).click();
+	}
+	
 }

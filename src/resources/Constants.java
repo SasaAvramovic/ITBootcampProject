@@ -4,6 +4,11 @@ import org.openqa.selenium.By;
 
 public class Constants {
 	
+	public static final String PATH = System.getProperty("user.dir") + "\\src\\files\\";
+	public static final String USER = "lucy@the.sky";
+	public static final String PASSWORD = "PurpleHaze";
+	public static final By STATUS = By.xpath("//*[@id=\"_status\"]");
+	
 	//Home page
 	public static final String URL_HOME = "https://www.humanity.com/";
 	public static final By LOGIN_HOME = By.xpath("//*[@id=\"navbarSupportedContent\"]/div/a[2]/p");
@@ -27,7 +32,7 @@ public class Constants {
 	public static final By HEADER_DASH = By.id("sn_dashboard");
 	public static final By HEADER_SCHEDULE = By.id("sn_schedule");
 	public static final By HEADER_TIMECLOCK = By.id("sn_timeclock");
-	public static final By HEADER_REQUESTS = By.id("sn_requests");
+	public static final By HEADER_LEAVE = By.id("sn_requests");
 	public static final By HEADER_TRAINING = By.id("sn_training");
 	public static final By HEADER_STAFF = By.id("sn_staff");
 	public static final By HEADER_AVAILABILITY = By.id("sn_availability");
@@ -38,10 +43,56 @@ public class Constants {
 	public static final By USER_PROFILE = By.xpath("//*[@id=\"userm\"]/div/a[1]");
 	public static final By USER_SETTINGS = By.xpath("//*[@id=\"userm\"]/div/a[2]");
 	public static final By USER_SIGN_OUT = By.xpath("//*[@id=\"userm\"]/div/div[5]/a");
+	//page titles for testing purposes
+	public static final String DASH_TITLE = "Dashboard - Dashboard - Humanity";
+	public static final String SCHEDULE_TITLE = "ShiftPlanning - Humanity";
+	public static final String TIMECLOCK_TITLE = "Timeclock - Overview - Humanity";
+	public static final String LEAVE_TITLE = "Leave - Vacation - Humanity";
+	public static final String TRAINING_TITLE = "Training - Overview - Humanity";
+	public static final String STAFF_TITLE = "Staff - List - Humanity";
+	public static final String AVAILABILITY_TITLE = "Humanity";
+	public static final String PAYROLL_TITLE = "Payroll - Scheduled-hours - Humanity";
+	public static final String REPORTS_TITLE = "Reports - Reports Home - Humanity";
+	public static final String SETTINGS_TITLE = "Settings - Manage Settings - Humanity";
+	public static final String PROFILE_TITLE = "Staff - Detail - Humanity";
+	public static final String USER_SETTINGS_TITLE = "Staff - New User - Humanity";
+	public static final String USER_PROFILE_TITLE = "Staff - Overview - Humanity";
 	
 	//Dashboard
 	public static final String URL_DASH = "https://electrickoolaid.humanity.com/app/dashboard/";
 	
+	//Staff
+	public static final String STAFF_FIRST_NAME = "Jovica";
+	public static final String STAFF_LAST_NAME = "Jovicic";
+	public static final String STAFF_EMAIL = "jovicajovicic@hotmail.com";
+	public static final String STAFF_RENAME = "Perica";
+	public static final String STAFF_URL = "https://electrickoolaid.humanity.com/app/staff/list/load/true/";
+	public static final By STAFF_ADD = By.id("act_primary");
+	public static final By STAFF_SAVE = By.id("_as_save_multiple");
+	public static final By STAFF_LIST_INPUT = By.className("_ns_row");
+	public static final By STAFF_LIST_FNAME = By.className("_ns_fname");
+	public static final By STAFF_LIST_LNAME = By.className("_ns_lname");
+	public static final By STAFF_LIST_EMAIL = By.className("_ns_email");
+	public static final By STAFF_EMPLOYEES = By.xpath("//*[@id=\"stafftl_\"]/div[1]");
+	public static final By STAFF_ALL_STAFF = By.xpath("//*[@id=\"StaffSchedules\"]/ul[1]/li[1]/a");
+	public static final By STAFF_CHECKBOX = By.xpath("//*[@id=\"staff-list-container\"]/div[1]/div/div[1]/span/input");
+	public static final By STAFF_BULK_EDIT = By.xpath("//*[@id=\"_topnav\"]/button[2]");
+	public static final By STAFF_MANAGE_USER = By.xpath("//*[@id=\"manageAccount\"]/label/input");
+	public static final By STAFF_NEXT_STEP = By.xpath("//*[@id=\"_cd_staff\"]/div[2]/div[2]/div/form/button");
+	public static final By STAFF_CONFIRM = By.xpath("//*[@id=\"_cd_staff\"]/div[2]/div[2]/div/div/button");
+	public static final By STAFF_CLICK_NAME = By.partialLinkText(STAFF_FIRST_NAME);
+	public static final By STAFF_CLICK_EDIT = By.xpath("//*[@id=\"_cd_staff\"]/div[2]/div[2]/div[1]/a[2]");
+	public static final By STAFF_UPLOAD_PHOTO = By.id("fileupload");
 	
+	//edit details
+	public static final By EDIT_NAME = By.id("first_name");
+	public static final By SAVE_EMPLOYEE = By.xpath("//*[@id=\"act_primary\"]");
 	
+	//settings
+	public static final By SETTINGS_LANGUAGE = By.xpath("//*[@id=\"adminSettingsForm\"]/div[1]/table/tbody/tr[3]/td[2]/select");
+	public static final By SETTINGS_SAVE = By.xpath("//*[@id=\"act_primary\"]");
+	public static final By SETTINGS_NOTIFICATIONS_EMAIL = By.id("pref_pref_email");
+	public static final By SETTINGS_NOTIFICATIONS_SMS = By.id("pref_pref_sms");
+	public static final By SETTINGS_NOTIFICATIONS_PUSH = By.id("pref_pref_mobile_push");
+
 }

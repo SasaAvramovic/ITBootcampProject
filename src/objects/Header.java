@@ -19,7 +19,7 @@ public class Header {
 	}
 	
 	public static void clickHeaderRequests(WebDriver driver) {
-		driver.findElement(Constants.HEADER_REQUESTS).click();
+		driver.findElement(Constants.HEADER_LEAVE).click();
 	}
 	
 	public static void clickHeaderTraining(WebDriver driver) {
