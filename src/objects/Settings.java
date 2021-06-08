@@ -7,6 +7,7 @@ import resources.Constants;
 
 public class Settings {
 	
+	//test required methods
 	public static void selectLanguage(WebDriver driver, String language) {
 		Select dropdown = new Select(driver.findElement(Constants.SETTINGS_LANGUAGE));
 		dropdown.selectByVisibleText(language);
@@ -41,4 +42,5 @@ public class Settings {
 	public static void clickSaveSettings(WebDriver driver) {
 		driver.findElement(Constants.SETTINGS_SAVE).click();
 	}
+
 }

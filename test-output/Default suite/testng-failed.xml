@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TempTests">
+      <class name="objects.ProfileSettings">
         <methods>
           <include name="createDriver"/>
-          <include name="uncheckNotifications"/>
           <include name="closeAll"/>
+          <include name="editSettings"/>
         </methods>
-      </class> <!-- tests.TempTests -->
+      </class> <!-- objects.ProfileSettings -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

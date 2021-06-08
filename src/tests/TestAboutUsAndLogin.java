@@ -23,7 +23,7 @@ public class TestAboutUsAndLogin {
 
 	@BeforeClass
 	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constants.PATH_DRIVERS + "chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -35,8 +35,9 @@ public class TestAboutUsAndLogin {
 		driver.navigate().to(Constants.URL_HOME);
 		Homepage.closePopup(wait);
 		Homepage.clickAboutUs(driver);
-		SShot.screenShot(driver, "aboutUs.jpg");
-		File tempfile = new File ("aboutUs.jpg");
+		SShot.screenShot(driver, Constants.PATH_FILES + "aboutUs.jpg");
+		File tempfile = new File (Constants.PATH_FILES + "aboutUs.jpg");
+		//file exists, can't be viewed in Eclipse for some reason. Plug-in?
 		Assert.assertTrue(tempfile.exists());
 	}
 

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-07T21:04:21Z" name="Default suite" finished-at="2021-06-07T21:04:48Z" duration-ms="26916">
+  <suite started-at="2021-06-08T17:27:47Z" name="Default suite" finished-at="2021-06-08T17:28:15Z" duration-ms="28101">
     <groups>
     </groups>
-    <test started-at="2021-06-07T21:04:21Z" name="Default test" finished-at="2021-06-07T21:04:48Z" duration-ms="26916">
+    <test started-at="2021-06-08T17:27:47Z" name="Default test" finished-at="2021-06-08T17:28:15Z" duration-ms="28101">
       <class name="tests.TestAddStaffAndRename">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:21Z" name="createDriver" finished-at="2021-06-07T21:04:23Z" duration-ms="1830" status="PASS">
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-08T17:27:47Z" name="createDriver" finished-at="2021-06-08T17:27:49Z" duration-ms="2053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="testAddStaffAndRename()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:23Z" name="testAddStaffAndRename" finished-at="2021-06-07T21:04:43Z" duration-ms="20359" status="PASS">
+        <test-method signature="testAddStaffAndRename()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-08T17:27:49Z" name="testAddStaffAndRename" finished-at="2021-06-08T17:28:10Z" duration-ms="21312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddStaffAndRename -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-07T21:04:43Z" name="closeAll" finished-at="2021-06-07T21:04:48Z" duration-ms="4707" status="PASS">
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:tests.TestAddStaffAndRename@6a2b953e]" started-at="2021-06-08T17:28:10Z" name="closeAll" finished-at="2021-06-08T17:28:15Z" duration-ms="4704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->

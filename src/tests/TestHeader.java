@@ -21,7 +21,7 @@ public class TestHeader {
 
 	@BeforeClass
 	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constants.PATH_DRIVERS + "chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

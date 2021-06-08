@@ -25,7 +25,7 @@ public class TestAddStaffList {
 
 	@BeforeClass
 	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constants.PATH_DRIVERS + "chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 		
@@ -38,7 +38,7 @@ public class TestAddStaffList {
 		driver.navigate().to(Constants.URL_LOGIN);
 		//login
 		LoginPage.login(driver, wait);
-		File staff = new File(Constants.PATH + "staff.xlsx");
+		File staff = new File(Constants.PATH_FILES + "staff.xlsx");
 		Header.clickHeaderStaff(driver);
 		wait.until(ExpectedConditions.elementToBeClickable(Constants.STAFF_ADD)).click();
 		

@@ -23,7 +23,7 @@ public class TestLanguageAndNotifications {
 
 	@BeforeClass
 	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constants.PATH_DRIVERS + "chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 
@@ -39,6 +39,7 @@ public class TestLanguageAndNotifications {
 		LoginPage.login(driver, wait);
 
 		Header.clickHeaderSettings(driver);
+		
 		// change language to Serbian
 		Settings.selectLanguage(driver, "Serbian (machine)");
 		Settings.clickSaveSettings(driver);

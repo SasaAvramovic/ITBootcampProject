@@ -22,7 +22,7 @@ public class TestAddStaffAndRename {
 
 	@BeforeClass
 	public void createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", Constants.PATH_DRIVERS + "chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 		
@@ -62,7 +62,7 @@ public class TestAddStaffAndRename {
 		sa.assertTrue(driver.getPageSource().contains(Constants.STAFF_FIRST_NAME));
 		
 		//change staff name and add photo
-		Staff.rename(driver, wait, Constants.PATH + "staff_photo.jpg");
+		Staff.rename(driver, wait, Constants.PATH_FILES + "staff_photo.jpg");
 		
 		//verify new name
 		driver.navigate().to(Constants.STAFF_URL);

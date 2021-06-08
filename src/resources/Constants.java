@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 
 public class Constants {
 	
-	public static final String PATH = System.getProperty("user.dir") + "\\src\\files\\";
+	public static final String PATH_FILES = System.getProperty("user.dir") + "\\src\\files\\";
+	public static final String PATH_DRIVERS = System.getProperty("user.dir") + "\\src\\drivers\\";
 	public static final String USER = "lucy@the.sky";
 	public static final String PASSWORD = "PurpleHaze";
 	public static final By STATUS = By.xpath("//*[@id=\"_status\"]");
@@ -62,10 +63,10 @@ public class Constants {
 	public static final String URL_DASH = "https://electrickoolaid.humanity.com/app/dashboard/";
 	
 	//Staff
-	public static final String STAFF_FIRST_NAME = "Jovica";
-	public static final String STAFF_LAST_NAME = "Jovicic";
-	public static final String STAFF_EMAIL = "jovicajovicic@hotmail.com";
-	public static final String STAFF_RENAME = "Perica";
+	public static final String STAFF_FIRST_NAME = "Itan";
+	public static final String STAFF_LAST_NAME = "Hawk";
+	public static final String STAFF_EMAIL = "itan.hawk@hotmail.com";
+	public static final String STAFF_RENAME = "Johnatan";
 	public static final String STAFF_URL = "https://electrickoolaid.humanity.com/app/staff/list/load/true/";
 	public static final By STAFF_ADD = By.id("act_primary");
 	public static final By STAFF_SAVE = By.id("_as_save_multiple");
@@ -94,5 +95,16 @@ public class Constants {
 	public static final By SETTINGS_NOTIFICATIONS_EMAIL = By.id("pref_pref_email");
 	public static final By SETTINGS_NOTIFICATIONS_SMS = By.id("pref_pref_sms");
 	public static final By SETTINGS_NOTIFICATIONS_PUSH = By.id("pref_pref_mobile_push");
+	
+	//profile settings
+	public static final String NEW_NICKNAME = "Mickey";
+	public static final String NEW_WAGE = "15";
+	public static final By PROFILE_NICKNAME = By.id("nick_name");
+	public static final By PROFILE_WEEKLY_OVERTIME = By.id("overtime");
+	public static final By PROFILE_WAGE = By.id("wage");
+	public static final By PROFILE_PRIVACY_EMAIL = By.xpath("//*[@id=\"NewEmployeeForm\"]/table/tbody/tr[10]/td[2]/input[1]");
+	public static final By PROFILE_PRIVACY_PHONE = By.xpath("//*[@id=\"NewEmployeeForm\"]/table/tbody/tr[10]/td[2]/input[2]");
+	
+	
 
 }
